@@ -81,7 +81,7 @@ body {
     right: 6.5vh;
 }
 
-/* Subtle Glow Container - Updated to Dark Green */
+/* Subtle Glow Container - Updated to Red and Black */
 .menu-container::before {
     content: '';
     position: absolute;
@@ -89,7 +89,7 @@ body {
     left: -2vh;
     right: -2vh;
     bottom: -2vh;
-    background: radial-gradient(circle at 50% 50%, rgba(20, 50, 25, 0.3), transparent 40%);
+    background: radial-gradient(circle at 50% 50%, rgba(50, 20, 20, 0.3), transparent 40%);
     border-radius: 1.5vh;
     opacity: 0.2;
     animation: subtlePulse 3s ease-in-out infinite;
@@ -119,8 +119,8 @@ body {
     position: relative;
     margin-bottom: -0.2vh;
     box-shadow: 
-        0 0 1vh rgba(20, 50, 25, 0.4),
-        0 0 2vh rgba(15, 40, 20, 0.3),
+        0 0 1vh rgba(50, 20, 20, 0.4),
+        0 0 2vh rgba(40, 15, 15, 0.3),
         0 0.5vh 1.5vh rgba(0, 0, 0, 0.8);
     animation: bannerGlow 2s ease-in-out infinite;
 }
@@ -128,14 +128,14 @@ body {
 @keyframes bannerGlow {
     0%, 100% { 
         box-shadow: 
-            0 0 1vh rgba(20, 50, 25, 0.4),
-            0 0 2vh rgba(15, 40, 20, 0.3),
+            0 0 1vh rgba(50, 20, 20, 0.4),
+            0 0 2vh rgba(40, 15, 15, 0.3),
             0 0.5vh 1.5vh rgba(0, 0, 0, 0.8);
     }
     50% { 
         box-shadow: 
-            0 0 1.5vh rgba(25, 60, 30, 0.5),
-            0 0 2.5vh rgba(20, 50, 25, 0.4),
+            0 0 1.5vh rgba(60, 25, 25, 0.5),
+            0 0 2.5vh rgba(50, 20, 20, 0.4),
             0 0.5vh 2vh rgba(0, 0, 0, 0.9);
     }
 }
@@ -159,7 +159,7 @@ body {
     left: 0;
     right: 0;
     height: 60%;
-    background: linear-gradient(to top, rgba(10, 25, 15, 0.95), transparent);
+    background: linear-gradient(to top, rgba(25, 10, 10, 0.95), transparent);
     pointer-events: none;
 }
 
@@ -173,7 +173,7 @@ body {
     background: linear-gradient(
         45deg,
         transparent 30%,
-        rgba(40, 100, 50, 0.1) 50%,
+        rgba(100, 40, 40, 0.1) 50%,
         transparent 70%
     );
     animation: bannerShine 5s ease-in-out infinite;
@@ -188,7 +188,7 @@ body {
 /* Tabs - Updated Background and Borders */
 .menu-tabs {
     display: flex;
-    background: rgba(20, 35, 25, 0.92);
+    background: rgba(35, 20, 20, 0.92);
     border-radius: 0 0 0.4vh 0.4vh;
     overflow-x: auto;
     overflow-y: hidden;
@@ -196,12 +196,12 @@ body {
     scrollbar-width: none;
     scroll-behavior: smooth;
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(40, 80, 50, 0.3);
+    border: 1px solid rgba(80, 40, 40, 0.3);
     direction: ltr;
     position: relative;
     box-shadow: 
-        0 0 0.5vh rgba(30, 60, 40, 0.2),
-        inset 0 0 0.5vh rgba(30, 60, 40, 0.1);
+        0 0 0.5vh rgba(60, 30, 30, 0.2),
+        inset 0 0 0.5vh rgba(60, 30, 30, 0.1);
 }
 
 .menu-tabs::after {
@@ -213,7 +213,7 @@ body {
     bottom: -1px;
     background: linear-gradient(90deg, 
         transparent,
-        rgba(50, 100, 60, 0.2),
+        rgba(180, 50, 50, 0.2),
         transparent
     );
     background-size: 200% 100%;
@@ -237,7 +237,7 @@ body {
     padding: 1.5vh 1.5vh;
     font-size: 1.35vh;
     font-weight: 500;
-    color: rgba(200, 240, 210, 0.7);
+    color: rgba(240, 200, 200, 0.7);
     cursor: pointer;
     position: relative;
     background: transparent;
@@ -269,12 +269,12 @@ body {
 }
 
 .menu-tab.active {
-    background: linear-gradient(0deg, rgba(50, 100, 60, 0.4) 0%, transparent 100%);
+    background: linear-gradient(0deg, rgba(180, 50, 50, 0.4) 0%, transparent 100%);
     font-weight: 700;
     color: #ffffff;
     text-shadow: 
-        0 0 0.4vh rgba(80, 180, 100, 0.6),
-        0 0 0.8vh rgba(60, 140, 80, 0.4);
+        0 0 0.4vh rgba(220, 80, 80, 0.6),
+        0 0 0.8vh rgba(180, 60, 60, 0.4);
     transform: scale(1.08) translateY(-0.2vh);
     animation: tabActivate 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
@@ -282,15 +282,15 @@ body {
 @keyframes tabActivate {
     0% {
         transform: scale(1) translateY(0);
-        background: linear-gradient(0deg, rgba(50, 100, 60, 0.2) 0%, transparent 100%);
+        background: linear-gradient(0deg, rgba(180, 50, 50, 0.2) 0%, transparent 100%);
     }
     50% {
         transform: scale(1.12) translateY(-0.3vh);
-        background: linear-gradient(0deg, rgba(50, 100, 60, 0.5) 0%, transparent 100%);
+        background: linear-gradient(0deg, rgba(180, 50, 50, 0.5) 0%, transparent 100%);
     }
     100% {
         transform: scale(1.08) translateY(-0.2vh);
-        background: linear-gradient(0deg, rgba(50, 100, 60, 0.4) 0%, transparent 100%);
+        background: linear-gradient(0deg, rgba(180, 50, 50, 0.4) 0%, transparent 100%);
     }
 }
 
@@ -301,10 +301,10 @@ body {
     left: 10%;
     right: 10%;
     height: 0.4vh;
-    background: linear-gradient(90deg, transparent, rgba(80, 180, 100, 0.8), transparent);
+    background: linear-gradient(90deg, transparent,         rgba(220, 80, 80, 0.8), transparent);
     box-shadow: 
-        0 0 0.6vh rgba(60, 140, 80, 0.6),
-        0 0 1.2vh rgba(50, 120, 70, 0.4);
+        0 0 0.6vh rgba(180, 60, 60, 0.6),
+        0 0 1.2vh rgba(180, 50, 50, 0.4);
     animation: tabActiveGlow 1.5s ease-in-out infinite;
 }
 
@@ -312,40 +312,40 @@ body {
     0%, 100% { 
         opacity: 1;
         box-shadow: 
-            0 0 0.6vh rgba(60, 140, 80, 0.6),
-            0 0 1.2vh rgba(50, 120, 70, 0.4); 
+        0 0 0.6vh rgba(180, 60, 60, 0.6),
+        0 0 1.2vh rgba(180, 50, 50, 0.4); 
     }
     50% { 
         opacity: 0.7;
         box-shadow: 
-            0 0 0.9vh rgba(80, 180, 100, 0.7),
-            0 0 1.5vh rgba(60, 160, 90, 0.5);
+            0 0 0.9vh rgba(220, 80, 80, 0.7),
+            0 0 1.5vh rgba(200, 70, 70, 0.5);
     }
 }
 
 .menu-tab.single {
     flex: 1 1 auto;
     min-width: 10vh;
-    background: linear-gradient(0deg, rgba(50, 100, 60, 0.4) 0%, transparent 100%);
+    background: linear-gradient(0deg, rgba(180, 50, 50, 0.4) 0%, transparent 100%);
     color: white;
     cursor: default;
     font-weight: 700;
-    text-shadow: 0 0 0.8vh rgba(80, 180, 100, 0.7);
+    text-shadow: 0 0 0.8vh rgba(220, 80, 80, 0.7);
 }
 
-/* Scrollbar - Updated to Dark Green */
+/* Scrollbar - Updated to Red and Black */
 .scrollbar-container {
     position: absolute;
     left: -1.2vh;
     width: 0.5vh;
     border-radius: 0.25vh;
-    background: rgba(15, 30, 20, 0.8);
+    background: rgba(30, 15, 15, 0.8);
     pointer-events: none;
     z-index: 100;
     transition: opacity 0.3s ease;
     box-shadow: 
-        inset 0 0 0.3vh rgba(30, 60, 40, 0.3),
-        0 0 0.8vh rgba(20, 40, 25, 0.2);
+        inset 0 0 0.3vh rgba(60, 30, 30, 0.3),
+        0 0 0.8vh rgba(40, 20, 20, 0.2);
 }
 
 .scrollbar-container.hidden {
@@ -358,43 +358,43 @@ body {
     right: 0;
     top: 0;
     background: linear-gradient(180deg, 
-        rgba(60, 140, 80, 0.8) 0%, 
-        rgba(80, 180, 100, 1) 50%, 
-        rgba(50, 120, 70, 0.7) 100%
+        rgba(180, 60, 60, 0.8) 0%, 
+        rgba(220, 80, 80, 1) 50%, 
+        rgba(180, 50, 50, 0.7) 100%
     );
     border-radius: 0.25vh;
     transition: top 0.1s linear, height 0.15s ease;
     box-shadow: 
-        0 0 1.2vh rgba(60, 140, 80, 0.7),
-        0 0 2vh rgba(50, 120, 70, 0.5);
+        0 0 1.2vh rgba(180, 60, 60, 0.7),
+        0 0 2vh rgba(180, 50, 50, 0.5);
     animation: scrollbarPulse 2s ease-in-out infinite;
 }
 
 @keyframes scrollbarPulse {
     0%, 100% { 
         box-shadow: 
-            0 0 1.2vh rgba(60, 140, 80, 0.7),
-            0 0 2vh rgba(50, 120, 70, 0.5);
+            0 0 1.2vh rgba(180, 60, 60, 0.7),
+            0 0 2vh rgba(180, 50, 50, 0.5);
     }
     50% { 
         box-shadow: 
-            0 0 1.5vh rgba(80, 180, 100, 0.8),
-            0 0 2.5vh rgba(60, 160, 90, 0.6);
+            0 0 1.5vh rgba(220, 80, 80, 0.8),
+            0 0 2.5vh rgba(200, 70, 70, 0.6);
     }
 }
 
 /* Menu List - Updated Background */
 .menu-list-wrapper {
-    background: rgba(20, 35, 25, 0.92);
+    background: rgba(35, 20, 20, 0.92);
     border-radius: 0.5vh;
     margin-top: 0.3vh;
     position: relative;
     backdrop-filter: blur(12px);
-    border: 1px solid rgba(40, 80, 50, 0.3);
+    border: 1px solid rgba(80, 40, 40, 0.3);
     box-shadow: 
-        inset 0 0 1.5vh rgba(30, 60, 40, 0.15),
-        0 0 1.5vh rgba(30, 60, 40, 0.3),
-        0 0 2.5vh rgba(20, 40, 25, 0.25);
+        inset 0 0 1.5vh rgba(60, 30, 30, 0.15),
+        0 0 1.5vh rgba(60, 30, 30, 0.3),
+        0 0 2.5vh rgba(40, 20, 20, 0.25);
     transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
@@ -406,10 +406,10 @@ body {
     right: -2px;
     bottom: -2px;
     background: linear-gradient(45deg, 
-        rgba(50, 100, 60, 0.4),
-        rgba(40, 80, 50, 0.2),
-        rgba(50, 100, 60, 0.4),
-        rgba(40, 80, 50, 0.2)
+        rgba(180, 50, 50, 0.4),
+        rgba(80, 40, 40, 0.2),
+        rgba(180, 50, 50, 0.4),
+        rgba(80, 40, 40, 0.2)
     );
     background-size: 300% 300%;
     border-radius: 0.5vh;
@@ -440,7 +440,7 @@ body {
 /* Menu Items - Updated Colors */
 .menu-item {
     padding: 1vh 1.5vh;
-    color: rgba(200, 240, 210, 0.8);
+    color: rgba(240, 200, 200, 0.8);
     border-radius: 0.4vh;
     display: flex;
     align-items: center;
@@ -464,19 +464,19 @@ body {
     bottom: 0;
     width: 0;
     background: linear-gradient(90deg, 
-        rgba(80, 180, 100, 0.8) 0%, 
-        rgba(60, 140, 80, 0.5) 50%,
+        rgba(220, 80, 80, 0.8) 0%, 
+        rgba(180, 60, 60, 0.5) 50%,
         transparent 100%
     );
     transition: width 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
-    box-shadow: 0.8vh 0 1.5vh rgba(60, 140, 80, 0.5);
+    box-shadow: 0.8vh 0 1.5vh rgba(180, 60, 60, 0.5);
     border-radius: 0.3vh 0 0 0.3vh;
 }
 
 .menu-item.active {
     background: radial-gradient(circle at right, 
-        rgba(60, 140, 80, 0.6) 0%, 
-        rgba(50, 120, 70, 0.4) 50%,
+        rgba(180, 60, 60, 0.6) 0%, 
+        rgba(180, 50, 50, 0.4) 50%,
         transparent 100%
     );
     transform: translateX(-0.8vh) scale(1.02);
@@ -484,9 +484,9 @@ body {
     color: #ffffff;
     font-weight: 600;
     box-shadow: 
-        0 0 0.6vh rgba(60, 140, 80, 0.3),
-        inset 0 0 0.6vh rgba(80, 180, 100, 0.15);
-    text-shadow: 0 0 0.6vh rgba(80, 180, 100, 0.4);
+        0 0 0.6vh rgba(180, 60, 60, 0.3),
+        inset 0 0 0.6vh rgba(220, 80, 80, 0.15);
+    text-shadow: 0 0 0.6vh rgba(220, 80, 80, 0.4);
     animation: itemActivate 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
@@ -507,11 +507,11 @@ body {
 
 .menu-item.active::before {
     width: 0.6vh;
-    box-shadow: 0.8vh 0 1.2vh rgba(60, 140, 80, 0.5);
+    box-shadow: 0.8vh 0 1.2vh rgba(180, 60, 60, 0.5);
 }
 
 .menu-item:hover:not(.active) {
-    background: rgba(30, 50, 35, 0.5);
+    background: rgba(50, 30, 30, 0.5);
     transform: translateX(-0.3vh) scale(1.01);
     opacity: 0.9;
 }
@@ -550,29 +550,29 @@ body {
 }
 
 .menu-divider span {
-    color: rgba(200, 240, 210, 0.9);
+    color: rgba(240, 200, 200, 0.9);
     font-size: 1.05vh;
     font-weight: 700;
     letter-spacing: 0.08em;
     padding: 0 1.2vh;
-    background: rgba(20, 35, 25, 0.92);
+    background: rgba(35, 20, 20, 0.92);
     z-index: 1;
     text-shadow: 
-        0 0 0.9vh rgba(80, 180, 100, 0.7),
-        0 0 1.5vh rgba(60, 160, 90, 0.5);
+        0 0 0.9vh rgba(220, 80, 80, 0.7),
+        0 0 1.5vh rgba(200, 70, 70, 0.5);
     animation: dividerTextGlow 2s ease-in-out infinite;
 }
 
 @keyframes dividerTextGlow {
     0%, 100% { 
         text-shadow: 
-            0 0 0.9vh rgba(80, 180, 100, 0.7),
-            0 0 1.5vh rgba(60, 160, 90, 0.5);
+        0 0 0.9vh rgba(220, 80, 80, 0.7),
+        0 0 1.5vh rgba(200, 70, 70, 0.5);
     }
     50% { 
         text-shadow: 
-            0 0 1.4vh rgba(100, 200, 120, 0.8),
-            0 0 2.2vh rgba(80, 180, 100, 0.6);
+            0 0 1.4vh rgba(240, 100, 100, 0.8),
+            0 0 2.2vh rgba(220, 80, 80, 0.6);
     }
 }
 
@@ -584,13 +584,13 @@ body {
     height: 0.2vh;
     background: linear-gradient(90deg,
         transparent,
-        rgba(80, 180, 100, 0.6) 20%,
-        rgba(80, 180, 100, 0.6) 80%,
+        rgba(220, 80, 80, 0.6) 20%,
+        rgba(220, 80, 80, 0.6) 80%,
         transparent
     );
     box-shadow: 
-        0 0 1.2vh rgba(60, 140, 80, 0.5),
-        0 0 2vh rgba(50, 120, 70, 0.4);
+        0 0 1.2vh rgba(180, 60, 60, 0.5),
+        0 0 2vh rgba(180, 50, 50, 0.4);
     animation: dividerLineGlow 2s ease-in-out infinite;
 }
 
@@ -598,28 +598,28 @@ body {
     0%, 100% { 
         opacity: 1;
         box-shadow: 
-            0 0 1.2vh rgba(60, 140, 80, 0.5),
-            0 0 2vh rgba(50, 120, 70, 0.4);
+        0 0 1.2vh rgba(180, 60, 60, 0.5),
+        0 0 2vh rgba(180, 50, 50, 0.4);
     }
     50% { 
         opacity: 0.7;
         box-shadow: 
-            0 0 1.5vh rgba(80, 180, 100, 0.6),
-            0 0 2.5vh rgba(60, 160, 90, 0.5);
+            0 0 1.5vh rgba(220, 80, 80, 0.6),
+            0 0 2.5vh rgba(200, 70, 70, 0.5);
     }
 }
 
-/* Toggle Switch - Updated to Dark Green */
+/* Toggle Switch - Updated to Red and Black */
 .toggle {
     appearance: none;
     width: 3.5vh;
     height: 1.6vh;
-    background: rgba(15, 30, 20, 0.9);
+    background: rgba(30, 15, 15, 0.9);
     border-radius: 1vh;
     position: relative;
     cursor: pointer;
     transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
-    border: 1px solid rgba(40, 80, 50, 0.3);
+    border: 1px solid rgba(80, 40, 40, 0.3);
     box-shadow: inset 0 0 0.6vh rgba(0, 0, 0, 0.5);
 }
 
@@ -629,7 +629,7 @@ body {
     width: 1.2vh;
     height: 1.2vh;
     border-radius: 50%;
-    background: linear-gradient(135deg, #d0f0d0 0%, #80c080 100%);
+    background: linear-gradient(135deg, #f0d0d0 0%, #c08080 100%);
     top: 0.2vh;
     left: 0.2vh;
     transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -637,26 +637,26 @@ body {
 }
 
 .toggle.on {
-    background: rgba(50, 100, 60, 0.4);
-    border-color: rgba(60, 140, 80, 0.6);
+    background: rgba(180, 50, 50, 0.4);
+    border-color: rgba(180, 60, 60, 0.6);
     box-shadow: 
-        inset 0 0 0.8vh rgba(80, 180, 100, 0.4),
-        0 0 1.2vh rgba(60, 140, 80, 0.5);
+        inset 0 0 0.8vh rgba(220, 80, 80, 0.4),
+        0 0 1.2vh rgba(180, 60, 60, 0.5);
 }
 
 .toggle.on::before {
-    background: linear-gradient(135deg, #ffffff 0%, #a0d0a0 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #d0a0a0 100%);
     transform: translateX(1.8vh);
     box-shadow: 
-        0 0 0.9vh rgba(80, 180, 100, 0.7),
-        0 0 1.5vh rgba(60, 160, 90, 0.5);
+        0 0 0.9vh rgba(220, 80, 80, 0.7),
+        0 0 1.5vh rgba(200, 70, 70, 0.5);
 }
 
 .toggle:hover {
     transform: scale(1.08);
 }
 
-/* Slider - Updated to Dark Green */
+/* Slider - Updated to Red and Black */
 .range {
     width: 8vh;
     height: 1.3vh;
@@ -672,12 +672,12 @@ body {
     border-radius: 1vh;
     background: linear-gradient(
         to right,
-        rgba(60, 140, 80, 0.7) 0 var(--pct),
-        rgba(20, 35, 25, 0.9) var(--pct) 100%
+        rgba(180, 60, 60, 0.7) 0 var(--pct),
+        rgba(35, 20, 20, 0.9) var(--pct) 100%
     );
     box-shadow: 
         inset 0 0.1vh 0.3vh rgba(0, 0, 0, 0.6),
-        0 0 0.8vh rgba(60, 140, 80, calc(var(--pct) * 0.5 / 100));
+        0 0 0.8vh rgba(180, 60, 60, calc(var(--pct) * 0.5 / 100));
     transition: all 0.3s ease;
 }
 
@@ -687,29 +687,29 @@ body {
     height: 1.3vh;
     margin-top: -0.35vh;
     border-radius: 50%;
-    background: linear-gradient(135deg, #ffffff 0%, #a0d0a0 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #d0a0a0 100%);
     cursor: pointer;
     transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
     box-shadow: 
         0 0.2vh 0.5vh rgba(0, 0, 0, 0.4),
-        0 0 1.2vh rgba(60, 140, 80, 0.6),
-        0 0 2vh rgba(50, 120, 70, 0.4);
+        0 0 1.2vh rgba(180, 60, 60, 0.6),
+        0 0 2vh rgba(180, 50, 50, 0.4);
 }
 
 .range:hover::-webkit-slider-thumb {
     transform: scale(1.25);
     box-shadow: 
         0 0.3vh 0.7vh rgba(0, 0, 0, 0.5),
-        0 0 1.5vh rgba(80, 180, 100, 0.7),
-        0 0 2.5vh rgba(60, 160, 90, 0.5);
+        0 0 1.5vh rgba(220, 80, 80, 0.7),
+        0 0 2.5vh rgba(200, 70, 70, 0.5);
 }
 
 .range:active::-webkit-slider-thumb {
     transform: scale(1.4);
     box-shadow: 
         0 0.4vh 0.9vh rgba(0, 0, 0, 0.6),
-        0 0 2vh rgba(100, 200, 120, 0.8),
-        0 0 3vh rgba(80, 180, 100, 0.6);
+        0 0 2vh rgba(240, 100, 100, 0.8),
+        0 0 3vh rgba(220, 80, 80, 0.6);
 }
 
 /* Scroll Options */
@@ -725,16 +725,16 @@ body {
 .scroll-arrow:hover {
     transform: scale(1.4);
     text-shadow: 
-        0 0 0.9vh rgba(80, 180, 100, 0.8),
-        0 0 1.5vh rgba(60, 160, 90, 0.6);
+        0 0 0.9vh rgba(220, 80, 80, 0.8),
+        0 0 1.5vh rgba(200, 70, 70, 0.6);
 }
 
 /* Footer - Updated Background */
 .menu-footer {
     margin-top: 0.5vh;
     background: linear-gradient(135deg, 
-        rgba(15, 30, 20, 0.95) 0%, 
-        rgba(8, 20, 12, 0.95) 100%
+        rgba(30, 15, 15, 0.95) 0%, 
+        rgba(20, 8, 8, 0.95) 100%
     );
     border-radius: 0.5vh;
     padding: 1vh 1.5vh;
@@ -743,40 +743,40 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid rgba(40, 80, 50, 0.3);
+    border: 1px solid rgba(80, 40, 40, 0.3);
     box-shadow: 
-        0 0 0.6vh rgba(30, 60, 40, 0.3),
+        0 0 0.6vh rgba(60, 30, 30, 0.3),
         0 0.3vh 1.2vh rgba(0, 0, 0, 0.8),
-        inset 0 0 0.6vh rgba(30, 60, 40, 0.1);
+        inset 0 0 0.6vh rgba(60, 30, 30, 0.1);
     transition: all 0.4s ease;
 }
 
 .menu-footer:hover {
     box-shadow: 
-        0 0 1.5vh rgba(40, 80, 50, 0.5),
+        0 0 1.5vh rgba(80, 40, 40, 0.5),
         0 0.4vh 1.5vh rgba(0, 0, 0, 0.9),
-        inset 0 0 1.2vh rgba(40, 80, 50, 0.2);
+        inset 0 0 1.2vh rgba(80, 40, 40, 0.2);
     transform: translateY(-0.1vh);
 }
 
 .footer-version {
     font-weight: 600;
-    color: rgba(200, 240, 210, 0.9);
-    text-shadow: 0 0 0.6vh rgba(80, 180, 100, 0.3);
+    color: rgba(240, 200, 200, 0.9);
+    text-shadow: 0 0 0.6vh rgba(220, 80, 80, 0.3);
     transition: all 0.3s ease;
 }
 
 .footer-version:hover {
     color: #ffffff;
-    text-shadow: 0 0 0.9vh rgba(100, 200, 120, 0.5);
+    text-shadow: 0 0 0.9vh rgba(240, 100, 100, 0.5);
 }
 
 .footer-counter {
     font-weight: 700;
     color: #ffffff;
     text-shadow: 
-        0 0 0.6vh rgba(80, 180, 100, 0.6),
-        0 0 1.2vh rgba(60, 160, 90, 0.4);
+        0 0 0.6vh rgba(220, 80, 80, 0.6),
+        0 0 1.2vh rgba(200, 70, 70, 0.4);
     animation: counterPulse 2s ease-in-out infinite;
     transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
@@ -784,13 +784,13 @@ body {
 @keyframes counterPulse {
     0%, 100% { 
         text-shadow: 
-            0 0 0.6vh rgba(80, 180, 100, 0.6),
-            0 0 1.2vh rgba(60, 160, 90, 0.4);
+            0 0 0.6vh rgba(220, 80, 80, 0.6),
+            0 0 1.2vh rgba(200, 70, 70, 0.4);
     }
     50% { 
         text-shadow: 
-            0 0 0.9vh rgba(100, 200, 120, 0.7),
-            0 0 1.5vh rgba(80, 180, 100, 0.5);
+            0 0 0.9vh rgba(240, 100, 100, 0.7),
+            0 0 1.5vh rgba(220, 80, 80, 0.5);
     }
 }
 
@@ -801,24 +801,24 @@ body {
 }
 
 .menu-item.active .ph {
-    filter: drop-shadow(0 0 0.8vh rgba(80, 180, 100, 0.7));
+    filter: drop-shadow(0 0 0.8vh rgba(220, 80, 80, 0.7));
 }
 
-/* Input Box - Updated to Dark Green Theme */
+/* Input Box - Updated to Red and Black Theme */
 .input-container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(15, 30, 20, 0.96);
+    background: rgba(30, 15, 15, 0.96);
     border-radius: 0.6vh;
     padding: 1.8vh;
     box-shadow: 
-        0 0 2.5vh rgba(30, 60, 40, 0.5),
+        0 0 2.5vh rgba(60, 30, 30, 0.5),
         0 0.8vh 2vh rgba(0, 0, 0, 0.9);
     z-index: 1000;
     backdrop-filter: blur(15px);
-    border: 1px solid rgba(40, 80, 50, 0.4);
+    border: 1px solid rgba(80, 40, 40, 0.4);
     width: 26vh;
     animation: inputSlideIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
@@ -837,8 +837,8 @@ body {
 .input-box {
     width: 100%;
     padding: 1vh;
-    background: rgba(20, 35, 25, 0.9);
-    border: 1px solid rgba(40, 80, 50, 0.4);
+    background: rgba(35, 20, 20, 0.9);
+    border: 1px solid rgba(80, 40, 40, 0.4);
     border-radius: 0.4vh;
     color: white;
     font-family: 'Cairo', sans-serif;
@@ -849,11 +849,11 @@ body {
 
 .input-box:focus {
     outline: none;
-    border-color: rgba(80, 180, 100, 0.8);
+    border-color: rgba(220, 80, 80, 0.8);
     box-shadow: 
-        0 0 1.2vh rgba(60, 140, 80, 0.6),
-        inset 0 0 0.8vh rgba(60, 200, 114, 0.2);
-    background: rgba(25, 75, 36, 0.95);
+        0 0 1.2vh rgba(180, 60, 60, 0.6),
+        inset 0 0 0.8vh rgba(200, 60, 60, 0.2);
+    background: rgba(75, 25, 25, 0.95);
     transform: scale(1.02);
 }
 
@@ -896,16 +896,16 @@ body {
 }
 
 .input-btn.submit {
-    background: linear-gradient(135deg, rgba(60, 200, 114, 0.8), rgba(40, 100, 50, 0.8));
-    box-shadow: 0 0.3vh 0.7vh rgba(30, 120, 60, 0.5);
-    border: 1px solid rgba(60, 200, 95, 0.4);
+    background: linear-gradient(135deg, rgba(200, 60, 60, 0.8), rgba(180, 50, 50, 0.8));
+    box-shadow: 0 0.3vh 0.7vh rgba(120, 30, 30, 0.5);
+    border: 1px solid rgba(200, 60, 60, 0.4);
 }
 
 .input-btn.submit:hover {
-    background: linear-gradient(135deg, rgba(80, 255, 109, 0.9), rgba(60, 140, 80, 0.9));
+    background: linear-gradient(135deg, rgba(255, 80, 80, 0.9), rgba(180, 60, 60, 0.9));
     box-shadow: 
-        0 0 1.2vh rgba(80, 255, 103, 0.6),
-        0 0.4vh 0.9vh rgba(60, 200, 95, 0.5);
+        0 0 1.2vh rgba(255, 80, 80, 0.6),
+        0 0.4vh 0.9vh rgba(200, 60, 60, 0.5);
     transform: translateY(-0.2vh) scale(1.05);
 }
 
@@ -914,15 +914,15 @@ body {
 }
 
 .input-btn.cancel {
-    background: linear-gradient(135deg, rgba(40, 100, 45, 0.8), rgba(20, 35, 25, 0.8));
+    background: linear-gradient(135deg, rgba(100, 40, 40, 0.8), rgba(35, 20, 20, 0.8));
     box-shadow: 0 0.3vh 0.7vh rgba(0, 0, 0, 0.6);
-    border: 1px solid rgba(40, 160, 46, 0.3);
+    border: 1px solid rgba(160, 40, 40, 0.3);
 }
 
 .input-btn.cancel:hover {
-    background: linear-gradient(135deg, rgba(60, 90, 140, 0.9), rgba(40, 65, 100, 0.9));
+    background: linear-gradient(135deg, rgba(140, 60, 60, 0.9), rgba(100, 40, 40, 0.9));
     box-shadow: 
-        0 0 0.8vh rgba(60, 200, 95, 0.3),
+        0 0 0.8vh rgba(200, 60, 60, 0.3),
         0 0.4vh 0.9vh rgba(0, 0, 0, 0.8);
     transform: translateY(-0.2vh) scale(1.05);
 }
@@ -931,7 +931,7 @@ body {
     transform: translateY(0.1vh) scale(0.98);
 }
 
-/* Notifications - Updated to Dark Green */
+/* Notifications - Updated to Red and Black */
 .notification-container {
     position: fixed;
     bottom: 2vh;
@@ -941,14 +941,14 @@ body {
 }
 
 .notification {
-    background: rgba(15, 45, 20, 0.96);
+    background: rgba(45, 15, 15, 0.96);
     border-radius: 0.5vh;
     padding: 1.2vh;
     margin-bottom: 1.2vh;
     box-shadow: 
-        0 0 1.5vh rgba(30, 120, 68, 0.4),
+        0 0 1.5vh rgba(120, 30, 30, 0.4),
         0 0.3vh 1vh rgba(0, 0, 0, 0.7);
-    border: 1px solid rgba(40, 160, 60, 0.4);
+    border: 1px solid rgba(160, 40, 40, 0.4);
     backdrop-filter: blur(12px);
     animation: notificationSlideIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), 
                notificationSlideOut 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045) 2.5s forwards;
@@ -978,21 +978,21 @@ body {
 
 .notification-header {
     font-weight: 700;
-    color: #c0f0c0;
+    color: #f0c0c0;
     margin-bottom: 0.6vh;
     font-size: 1.25vh;
     text-shadow: 
-        0 0 0.8vh rgba(100, 255, 126, 0.7),
-        0 0 1.2vh rgba(80, 255, 159, 0.5);
+        0 0 0.8vh rgba(255, 100, 100, 0.7),
+        0 0 1.2vh rgba(255, 80, 80, 0.5);
 }
 
 .notification-body {
     font-size: 1.15vh;
-    color: rgba(220, 255, 230, 0.95);
+    color: rgba(255, 220, 220, 0.95);
     line-height: 1.4;
 }
 
-/* Keybinding - Updated to Dark Green */
+/* Keybinding - Updated to Red and Black */
 .keybinding-overlay {
     position: fixed;
     top: 0;
@@ -1020,13 +1020,13 @@ body {
 }
 
 .keybinding-box {
-    background: rgba(17, 45, 15, 0.96);
+    background: rgba(45, 17, 17, 0.96);
     border-radius: 0.6vh;
     padding: 2.5vh;
     box-shadow: 
-        0 0 2.5vh rgba(30, 120, 30, 0.5),
+        0 0 2.5vh rgba(120, 30, 30, 0.5),
         0 1vh 2.5vh rgba(0, 0, 0, 0.9);
-    border: 1px solid rgba(40, 160, 70, 0.4);
+    border: 1px solid rgba(160, 40, 40, 0.4);
     text-align: center;
     width: 32vh;
     animation: keybindingPopIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -1046,16 +1046,16 @@ body {
 .keybinding-title {
     font-size: 1.5vh;
     font-weight: 700;
-    color: #c0f0c0;
+    color: #f0c0c0;
     margin-bottom: 1.2vh;
     text-shadow: 
-        0 0 1.2vh rgba(100, 255, 100, 0.7),
-        0 0 2vh rgba(95, 255, 80, 0.5);
+        0 0 1.2vh rgba(255, 100, 100, 0.7),
+        0 0 2vh rgba(255, 95, 80, 0.5);
 }
 
 .keybinding-instruction {
     font-size: 1.25vh;
-    color: rgba(220, 255, 230, 0.95);
+    color: rgba(255, 220, 220, 0.95);
     margin-bottom: 2.5vh;
     line-height: 1.5;
 }
@@ -1064,15 +1064,15 @@ body {
     font-size: 2.2vh;
     font-weight: 700;
     color: white;
-    background: rgba(60, 200, 67, 0.3);
-    border: 2px solid rgba(80, 255, 80, 0.6);
+    background: rgba(200, 60, 60, 0.3);
+    border: 2px solid rgba(255, 80, 80, 0.6);
     border-radius: 0.4vh;
     padding: 0.8vh 1.5vh;
     display: inline-block;
     margin-bottom: 1.5vh;
     box-shadow: 
-        0 0 1.2vh rgba(86, 255, 80, 0.6),
-        0 0 2vh rgba(100, 200, 60, 0.4);
+        0 0 1.2vh rgba(255, 86, 80, 0.6),
+        0 0 2vh rgba(200, 100, 60, 0.4);
     animation: keyPulse 1.2s ease-in-out infinite;
     min-width: 4vh;
 }
@@ -1080,29 +1080,29 @@ body {
 @keyframes keyPulse {
     0%, 100% { 
         box-shadow: 
-            0 0 1.2vh rgba(109, 255, 80, 0.6),
-            0 0 2vh rgba(104, 200, 60, 0.4);
+            0 0 1.2vh rgba(255, 109, 80, 0.6),
+            0 0 2vh rgba(200, 104, 60, 0.4);
         transform: scale(1);
     }
     50% { 
         box-shadow: 
-            0 0 2vh rgba(105, 255, 100, 0.7),
-            0 0 3vh rgba(100, 255, 80, 0.5);
+            0 0 2vh rgba(255, 105, 100, 0.7),
+            0 0 3vh rgba(255, 100, 80, 0.5);
         transform: scale(1.08);
     }
 }
 
 .keybinding-cancel {
     font-size: 1.15vh;
-    color: rgba(180, 255, 184, 0.8);
+    color: rgba(255, 180, 180, 0.8);
     cursor: pointer;
     text-decoration: underline;
     transition: all 0.3s ease;
 }
 
 .keybinding-cancel:hover {
-    color: #c0ffc0;
-    text-shadow: 0 0 0.8vh rgba(105, 255, 100, 0.6);
+    color: #ffc0c0;
+    text-shadow: 0 0 0.8vh rgba(255, 105, 100, 0.6);
     transform: scale(1.05);
 }
 
@@ -1114,7 +1114,7 @@ body {
             <div id="scrollbarThumb" class="scrollbar-thumb"></div>
         </div>
         <div class="menu-banner">
-            <img id="bannerImage" src="banner.png" alt="Banner">
+            <img id="bannerImage" src="https://i.postimg.cc/yxBFHMrx/Chat-GPT-Image-Dec-27-2025-03-04-40-PM.png" alt="Banner">
         </div>
         <div id="menuTabs" class="menu-tabs"><div class="menu-tab single">Main Menu</div></div>
         <div class="menu-list-wrapper">
